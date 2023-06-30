@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Зарегистрированные пользователи</title>
+  <link rel="stylesheet" href="styleusers.css">
+</head>
+<body>
+  <div id="passwordForm">
+    <label for="password">Ведіть пароль:</label>
+    <input type="password" id="password">
+    <button onclick="checkPassword()">Війти</button>
+  </div>
+  
+  <div id="content" style="display: none;">
+    <h1>Основной контент</h1>
+    <h2>Зарегистрированные пользователи:</h2>
+  <table id="user-table">
+    <thead>
+      <tr>
+        <th>Имя пользователя</th>
+        <th>Пароль</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  </div>
+  
+  <script src="users.js"></script>
+</body>
+</html>

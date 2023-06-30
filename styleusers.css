@@ -1,0 +1,96 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1500px;
+      background-image: url(./Rectangle.png);
+      color: #ffffff;
+      background-color: rgba(11, 15, 50, 0.97);;
+    }
+    .passwordForm {
+      text-align: center;
+      margin-top: 200px;
+      opacity: 1;
+      transition: opacity 2s ease;
+    }
+
+    .passwordForm.hidden {
+      opacity: 0;
+    }
+
+    label {
+      font-size: 18px;
+      color: #ffffff;
+      margin-left: 500px;
+    }
+
+    input[type="password"] {
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      width: 200px;
+      margin-top: 300px;
+      background-color: #f8f8f8;
+      transition: background-color 2s ease;
+      
+    }
+
+    input[type="password"]:focus {
+      background-color: #ebebeb;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+      opacity: 1;
+      transition: opacity 2s ease;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .content {
+      display: none;
+      text-align: center;
+      margin-top: 50px;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    h2 {
+      color: #fff;
+      margin-top: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      color: #ffffff;
+    }
+
+    th {
+      color: rgb(0, 0, 0);
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
